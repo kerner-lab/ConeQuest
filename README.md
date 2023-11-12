@@ -8,9 +8,18 @@ ConeQuest is the first expert-annotated publicly available dataset for cone segm
 
 - The ConeQuest dataset has a total of 13,686 patches from 8 different subtiles across 3 regions.
 
-- Metadata of each CTX tile across three regions used in the creation of ConeQuest
+- Metadata of each CTX tile across three regions used in the creation of ConeQuest:
 
 <img width="1028" alt="Screenshot 2023-11-11 at 6 26 39 PM" src="https://github.com/kerner-lab/ConeQuest/assets/46327378/dd1e2f27-39e8-4e0f-b4ad-40b6be3e8338">
+
+
+### Getting Started
+
+#### Environment Setup
+
+```bash
+conda env create -f conequest_env.yml
+```
 
 
 ### License
