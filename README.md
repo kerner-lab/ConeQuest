@@ -14,7 +14,7 @@ ConeQuest is the first expert-annotated publicly available dataset for cone segm
 
 
 ### License
-ConeQuest has a [Creative Commons Attribution-ShareAlike 4.0 International](https://github.com/nasaharvest/cropharvest/blob/main/LICENSE.txt) license.
+ConeQuest has a [Creative Commons Zero v1.0 Universal](https://github.com/kerner-lab/ConeQuest/blob/main/LICENSE) license.
 
 ### Citation
 
