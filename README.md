@@ -34,12 +34,28 @@ ConeQuest has a [Creative Commons Zero v1.0 Universal](https://github.com/kerner
 ### Citation
 
 If you use ConeQuest in your research, please use the following citation:
+
+- arXiv version
 ```
-@inproceedings{
-    purohit2024conequest,
+@misc{tseng2023lightweight,
+      title={Lightweight, Pre-trained Transformers for Remote Sensing Timeseries},
+      author={Purohit, Mirali and Adler, Jacob and Kerner, Hannah},
+      year={2023},
+      eprint={2311.08657},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
+
+- WACV 2024 version
+```
+@InProceedings{Purohit_2024_WACV,
+    author={Purohit, Mirali and Adler, Jacob and Kerner, Hannah},
     title={ConeQuest: A Benchmark for Cone Segmentation on Mars},
-    author={Mirali Purohit and Jacob Adler and Hannah Kerner},
-    booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision},
+    booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+    month={January},
     year={2024}
 }
 ```
+
+
