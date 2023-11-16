@@ -21,6 +21,12 @@ ConeQuest is the first expert-annotated publicly available dataset for cone segm
 conda env create -f conequest_env.yml
 ```
 
+#### Download ConeQuest from Zenodo
+
+```bash
+./download_data.sh
+```
+
 
 ### License
 ConeQuest has a [Creative Commons Zero v1.0 Universal](https://github.com/kerner-lab/ConeQuest/blob/main/LICENSE) license.
