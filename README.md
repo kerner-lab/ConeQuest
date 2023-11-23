@@ -12,6 +12,9 @@ ConeQuest is the first expert-annotated publicly available dataset for cone segm
 
 <img width="1028" alt="Screenshot 2023-11-11 at 6 26 39 PM" src="https://github.com/kerner-lab/ConeQuest/assets/46327378/dd1e2f27-39e8-4e0f-b4ad-40b6be3e8338">
 
+More details about ConeQuest are available in [this paper](https://arxiv.org/abs/2311.08657).
+
+##
 
 ### Getting Started
 
@@ -27,6 +30,28 @@ conda env create -f conequest_env.yml
 ./download_data.sh
 ```
 
+#### Training and Testing models
+Utilize the arguments described in _main.py_ to train and test models for various configurations. A few important arguments are explained below:
+- Provide _training_type_ argument 1 or 2 to train a model for benchmarks 1 and 2, respectively.
+- In the _training_data_list_, provide a list (string separated with a comma) of region/s or size/s on which model will be trained, e.g., "Isidis Planitia, Hypanis" or "small, medium".
+- Use _if_training_positives_ to train your model only on positive samples.
+
+```bash
+python main.py \
+    --if_training \
+    --training_type 1 \
+    --training_data_list "Isidis Planitia" \
+    --train_model DeepLab
+```
+
+- In the _eval_data_, provide which region or size to evaluate.
+```bash
+python main.py \
+    --if_testing \
+    --training_data_list "Isidis Planitia, Hypanis" \
+    --train_model DeepLab
+    --eval_data Hypanis
+```
 
 ### License
 ConeQuest has a [Creative Commons Zero v1.0 Universal](https://github.com/kerner-lab/ConeQuest/blob/main/LICENSE) license.
@@ -37,8 +62,8 @@ If you use ConeQuest in your research, please use the following citation:
 
 - arXiv version
 ```
-@misc{tseng2023lightweight,
-      title={Lightweight, Pre-trained Transformers for Remote Sensing Timeseries},
+@misc{purohit2023conequest,
+      title={ConeQuest: A Benchmark for Cone Segmentation on Mars},
       author={Purohit, Mirali and Adler, Jacob and Kerner, Hannah},
       year={2023},
       eprint={2311.08657},
