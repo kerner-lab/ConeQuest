@@ -4,7 +4,6 @@ import sys
 import torch
 
 from data_processing import data_preprocessing
-# from data_processing_2 import data_preprocessing
 from model_training import training
 from testing import testing
 
@@ -25,7 +24,7 @@ argparser.add_argument("--data_dir", type=str, default="data", required=False)
 argparser.add_argument("--training_type", type=int, default=1, required=True,
                        help="Provie 1 for region-wise training (BM-1) and 2 for size-wise training (BM-2)")
 argparser.add_argument("--training_data_list", "--list", type=str, default=None, required=False,
-                       help="Provide list of training configuration; whether single-region, multi-region, sigle-size or multi-size")
+                       help="Provide a list of training configurations; whether single-region, multi-region, single-size or multi-size")
 
 argparser.add_argument("--validation_split", type=float, default=0.1, required=False)
 argparser.add_argument("--testing_split", type=float, default=0.2, required=False)
@@ -86,7 +85,7 @@ if not os.path.exists(output_dir):
 ### Training
 if if_training:
 
-    ### Data preparation
+    ### Data Preparation
     train_dl, val_dl = data_preprocessing(
         data_dir=data_dir,
         training_type=training_type,
@@ -129,7 +128,7 @@ if if_testing:
         print("Provide either region (BM-1) or size (for BM-2) on which model will be evaluated for", name_of_run, "training.")
         sys.exit()
 
-    ### Data preparation
+    ### Data Preparation
     test_dl = data_preprocessing(
         data_dir=data_dir,
         training_type=training_type,
@@ -158,5 +157,3 @@ if if_testing:
     )
 
     print("-"*50)
-
-# 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
