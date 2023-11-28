@@ -48,6 +48,7 @@ python main.py \
 ```bash
 python main.py \
     --if_testing \
+    --training_type 1 \
     --training_data_list "Isidis Planitia, Hypanis" \
     --train_model DeepLab
     --eval_data Hypanis
