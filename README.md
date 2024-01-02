@@ -80,7 +80,8 @@ If you use ConeQuest in your research, please use the following citation:
     title={ConeQuest: A Benchmark for Cone Segmentation on Mars},
     booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
     month={January},
-    year={2024}
+    year={2024},
+    pages={6026-6035}
 }
 ```
 
