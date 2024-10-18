@@ -23,7 +23,7 @@ argparser.add_argument("--if_training_positives", default=False, required=False,
 argparser.add_argument("--data_dir", type=str, default="data", required=False)
 argparser.add_argument("--training_type", type=int, default=1, required=True,
                        help="Provie 1 for region-wise training (BM-1) and 2 for size-wise training (BM-2)")
-argparser.add_argument("--training_data_list", "--list", type=str, default=None, required=False,
+argparser.add_argument("--training_data_list", "--list", type=str, default=None, required=True,
                        help="Provide a list of training configurations; whether single-region, multi-region, single-size or multi-size")
 
 argparser.add_argument("--validation_split", type=float, default=0.1, required=False)
