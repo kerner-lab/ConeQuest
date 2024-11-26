@@ -71,5 +71,6 @@ If you use ConeQuest in your research, please use the following citation:
     pages={6026-6035}
 }
 ```
-
+### Contact Information
+Please reach out to Mirali Purohit [mpurohi3@asu.edu](mpurohi3@asu.edu), if you have any queries or issues regarding ConeQuest.
 
