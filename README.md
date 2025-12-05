@@ -1,4 +1,4 @@
-# ConeQuest
+# ConeQuest [WACV 2024 Oral]
 ConeQuest is the first expert-annotated publicly available dataset for cone segmentation across three different regions on Mars, along with metadata for each sample.
 
 
